@@ -1,0 +1,9 @@
+diff -ur mysqlpython-1.2.3.orig/setup.cfg mysqlpython-1.2.3/setup.cfg
+--- mysqlpython-1.2.3.orig/setup.cfg	2014-02-06 12:49:05.865720103 +0100
++++ mysqlpython-1.2.3/setup.cfg	2014-02-06 12:49:50.615847497 +0100
+@@ -16,3 +16,5 @@
+ 
+ [build_ext]
+ 
++[install]
++install-platlib=$base/lib/python
