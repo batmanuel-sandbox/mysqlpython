@@ -1,0 +1,9 @@
+diff -u -ur MySQL-python-1.2.3.orig/setup.py MySQL-python-1.2.3/setup.py
+--- MySQL-python-1.2.3.orig/setup.py	2015-09-15 10:59:03.669021612 -0700
++++ MySQL-python-1.2.3/setup.py	2015-09-15 10:59:15.537132442 -0700
+@@ -15,4 +15,5 @@
+ metadata, options = get_config()
+ metadata['ext_modules'] = [Extension(sources=['_mysql.c'], **options)]
+ metadata['long_description'] = metadata['long_description'].replace(r'\n', '')
++metadata['zip_safe'] = False
+ setup(**metadata)
